@@ -47,10 +47,18 @@ Cuando los contenedores estén corriendo puede dirigirse a: [http://localhost:30
 
 ## Parar el aplicativo
 
-To stop and remove the containers, run:
-![Descripción del gif](/imgs/git-video.gif)
+Para y elimina los contenedores, redes y volúmenes creados por `docker-compose up`:
+
+Windows:
 ```bash
 docker-compose down
+docker volume rm usersitglobers_auth_data
+```
+
+Linux:
+```bash
+sudo docker compose down
+sudo docker volume rm usersitglobers_auth_data
 ```
 
 ![alt text](/imgs/image-01.png)
