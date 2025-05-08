@@ -64,8 +64,6 @@ const Dashboard = () => {
                       <span className="text-sm text-gray-700">{user.email}</span>
                     </>
                   )}
-                  <span className="text-sm text-gray-500">Rol:</span>
-                  <span className="text-sm text-gray-700">{user.role}</span>
                   <span className="text-sm text-gray-500">Creado:</span>
                   <span className="text-sm text-gray-700">
                     {user.createdAt ? new Date(user.createdAt).toLocaleString() : ""}
@@ -74,8 +72,6 @@ const Dashboard = () => {
                   <span className="text-sm text-gray-700">
                     {user.updatedAt ? new Date(user.updatedAt).toLocaleString() : ""}
                   </span>
-                  <span className="text-sm text-gray-500">Versión:</span>
-                  <span className="text-sm text-gray-700">{user.__v}</span>
                 </div>
               </li>
             ))}
