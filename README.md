@@ -49,4 +49,4 @@ docker-compose down
 
 ![alt text](/imgs/image-03.png)
 
-![Descripción del gif](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExamtzb3JkaDJwd2J6aTl4OGF4dGVrc280cmRpM252dGZhbm4ydmRxMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9wHozyRgpJUlmsHs8z/giphy.gif)
+![Descripción del gif](/imgs/git-video.gif)
