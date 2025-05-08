@@ -31,8 +31,14 @@ cd usersITGlobers
 
 1.  **Inicia los servicios:**
 
+Windows: 
 ```bash
 docker-compose up --build -d
+```
+
+Linux:
+```bash
+sudo docker compose up --build -d
 ```
 
 1.  **Accede al aplicativo:**
