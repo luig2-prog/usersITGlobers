@@ -2,6 +2,10 @@
 
 Prueba técnica ITGlobers
 
+![Descripción del gif](/imgs/git-video.gif)
+
+![alt text](/imgs/image-02.png)
+
 Este proyecto fue construido con las siguientes tecnologías
 
 - **Backend:** NodeJS con Arquitectura Hexagonal
@@ -38,7 +42,7 @@ Cuando los contenedores estén corriendo puede dirigirse a: [http://localhost:30
 ## Parar el aplicativo
 
 To stop and remove the containers, run:
-
+![Descripción del gif](/imgs/git-video.gif)
 ```bash
 docker-compose down
 ```
@@ -49,4 +53,3 @@ docker-compose down
 
 ![alt text](/imgs/image-03.png)
 
-![Descripción del gif](/imgs/git-video.gif)
