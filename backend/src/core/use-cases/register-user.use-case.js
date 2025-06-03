@@ -4,7 +4,6 @@ class RegisterUserUseCase {
   }
 
   async execute(userData) {
-    // Reglas de negocio
     const nameRegex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{1,40}$/;
     const usernameRegex = /^[A-Za-z0-9_]{1,30}$/;
     const phoneRegex = /^[0-9]{10}$/;

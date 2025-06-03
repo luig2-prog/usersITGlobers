@@ -22,9 +22,10 @@ const Register = () => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   const validate = (data) => {
-    if (!data.firstName || !nameRegex.test(data.firstName)) {
-      return "El nombre es obligatorio, máximo 40 caracteres y solo letras/espacios";
-    }
+    console.log("🚀 ~ validate ~ data:", data)
+    // if (!data.firstName || !nameRegex.test(data.firstName)) {
+    //   return "El nombre es obligatorio, máximo 40 caracteres y solo letras/espacios";
+    // }
     if (!data.paternalLastName || !nameRegex.test(data.paternalLastName)) {
       return "El apellido paterno es obligatorio, máximo 40 caracteres y solo letras/espacios";
     }
@@ -62,8 +63,8 @@ const Register = () => {
     e.preventDefault();
     setError("");
     setLoading(true);
+    console.log("🚀 ~ handleChange ~ formData:", formData)
 
-    // Validación frontend antes de enviar
     const validationError = validate(formData);
     if (validationError) {
       setError(validationError);

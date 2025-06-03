@@ -1,17 +1,15 @@
 const mongoose = require('mongoose');
+const config = require('../config/config');
 
 async function createInitialUser() {
   try {
-    // Connect to MongoDB
-    const mongoUri = process.env.MONGO_URI_AUTH;
+    const mongoUri = config.mongoUriAuth;
     
-    // Check if already connected
     if (mongoose.connection.readyState !== 1) {
       await mongoose.connect(mongoUri);
       console.log('Connected to MongoDB for initialization');
     }
 
-    // Get the existing User model
     const User = mongoose.models.User;
     
     if (!User) {
@@ -19,11 +17,9 @@ async function createInitialUser() {
       return;
     }
 
-    // Check if any user exists
     const userCount = await User.countDocuments();
     
     if (userCount === 0) {
-      // Create default admin user with all required fields
       const adminUser = new User({
         firstName: 'Admin',
         paternalLastName: 'User',
@@ -31,7 +27,7 @@ async function createInitialUser() {
         phoneNumber: '1234567890',
         email: 'admin@example.com',
         username: 'admin',
-        password: 'admin123', // Plain password, will be hashed by the pre-save middleware
+        password: 'admin123',
         role: 'ADMIN'
       });
 
@@ -43,8 +39,6 @@ async function createInitialUser() {
   } catch (error) {
     console.error('Error creating initial user:', error);
   }
-  // Don't disconnect here as the connection might be needed by other parts of the application
 }
 
-// Export the function
 module.exports = { createInitialUser }; 

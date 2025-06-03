@@ -67,3 +67,11 @@ sudo docker volume rm usersitglobers_auth_data
 
 ![alt text](/imgs/image-03.png)
 
+# Preguntas:
+
+1. Que cambiarias en el back para desplegarla en una lambda de AWS
+2. Que tecnologías adicionales agregarias para mejorar el proyecto
+3. Que tecnologías agregarias para mejorar el proyecto
+4. Que cambios agregarias para mejorar el proyecto
+5. Como implementarias Kubernetes para desplegar el proyecto
+6. En donde desplegarías el proyecto

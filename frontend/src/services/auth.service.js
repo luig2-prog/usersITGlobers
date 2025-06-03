@@ -2,7 +2,6 @@ import axios from "axios";
 
 const API_URL = "http://localhost:3001/auth";
 
-// Configurar axios para incluir el token en todas las peticiones
 axios.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem("token");
